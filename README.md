@@ -1,11 +1,11 @@
 # Supplementary Table S1 — Corpus classification
 
-This file accompanies the survey *Unmanned Aerial Systems for Crop and Livestock Farming*. It lists every paper in the corpus with its codes in the survey's taxonomy, so that every count reported in the paper can be checked. The same data are in `S1_classification.csv`.
+This file accompanies the survey *Unmanned Aerial Systems for Crop and Livestock Farming: A System-Oriented Survey of Sensing, Intelligence, Connectivity, and Autonomy*. It lists every paper in the corpus with its codes in the survey's taxonomy, so that every count reported in the paper can be checked. The same data are in `S1_classification.csv`.
 
 ## 1. How the corpus was built
 
-- **Search.** Google Scholar, July–August 2026, 44 keyword queries in seven families, each pairing "UAV" with a crop or livestock application, a sensing modality, onboard intelligence, communications, planning, or an operational constraint (energy, payload).
-- **Selection.** Peer-reviewed journal and conference papers from 2019 onward, in English, issued by a recognized publisher, in which a UAS is the platform or the explicit design target and the application is crop production, livestock production, or grazed vegetation. Preprints, theses, and technical reports were excluded. Among eligible records, selection was by venue.
+- **Search.** Google Scholar, July–August 2026, 166 keyword queries in 18 groups, run in two stages (full list in Supplementary Table S2, `S2_queries.md`). The first stage paired "UAV" with a crop or livestock application, a sensing modality, onboard intelligence, communications, planning, or an operational constraint (energy, payload). Because it returned few livestock records, the second stage added livestock-specific queries on detection and counting, behavior, welfare and health, and pasture and grazing, together with livestock variants of the sensing, vision, multi-UAV, and field-validation queries. Existing surveys were also queried and snowballed.
+- **Selection.** Peer-reviewed journal and conference papers from 2019 onward, in English, issued by a recognized publisher, in which a UAS is the platform or the explicit design target and the application is crop production, livestock production, or pasture (grazed vegetation). Preprints, theses, and technical reports were excluded. Among eligible records, established venues in agricultural engineering, remote sensing, animal science, robotics, and communications were favored; this judgment was qualitative, and the corpus spans 129 venues.
 - **Coverage check.** A targeted search on autonomous, onboard-perception, and multi-UAV livestock operation added one study.
 - **Result.** 271 papers: 240 primary studies (including 7 dataset and 4 position papers), 28 surveys, and 3 background papers.
 
@@ -13,16 +13,18 @@ The corpus is a purposive sample. Counts describe the corpus, not the whole fiel
 
 ## 2. How each paper was coded
 
-One author read every paper in full and wrote a standardized review (summary, relevance, strengths, weaknesses, and a cross-check of the paper's claims against its own evidence). A second author classified the papers from these reviews. A paper is classified by what it **implements and evaluates**, not by what it proposes or motivates. Surveys and background papers are not classified and have `NA` in the taxonomy columns.
+One author read every paper in full and wrote a standardized review (summary, relevance, strengths, weaknesses, and a cross-check of the paper's claims against its own evidence). A second author classified the papers from these reviews. At least two authors agreed on the final loop-level assignments, and every study at L2–L4 was checked a second time against its review. A paper is classified by what it **implements and evaluates**, not by what it proposes or motivates. Surveys and background papers are not classified and have `NA` in the taxonomy columns.
 
 ### Loop coverage (L) — primary dimension
+
+A *decision* is an instruction on what to do, such as a spray map, an irrigation quota, or an alert; an *action* is its physical execution by the UAS. Where farm staff rather than the aircraft execute a decision, as in much of livestock care, the study is coded L2: the level records what the UAS does, not whether the study is complete.
 
 | Code | Name | A study is coded here when… |
 |---|---|---|
 | L0 | Enabler | it contributes a platform, network, planner, controller, energy, or data component, and no agricultural target is perceived or treated in its evaluation |
 | L1p | Perception product | UAV data are turned into an estimate, map, or detection of an agricultural target, and no decision is produced |
 | L1a | Action without target perception | the UAV sprays, herds, or hazes with preset settings, or with settings driven by a prescription or telemetry, without perceiving the target |
-| L2 | Decision artifact | perception yields a prescription, quota, mission, or alert that is not executed in the study |
+| L2 | Decision not executed | perception yields a prescription, quota, mission, or alert that is not executed in the study |
 | L3 | Decoupled loop | perception, decision, and action are all executed, but in separate missions or operations (e.g., map then spray) |
 | L4 | In-mission loop | perception of the agricultural target changes the UAV's flight or actuation during the same mission |
 
