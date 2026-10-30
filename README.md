@@ -1,10 +1,19 @@
-# Supplementary Table S1 — Corpus classification
+# Supplementary material
 
-This file accompanies the survey *Unmanned Aerial Systems for Crop and Livestock Farming: A System-Oriented Survey of Sensing, Intelligence, Connectivity, and Autonomy*. It lists every paper in the corpus with its codes in the survey's taxonomy, so that every count reported in the paper can be checked. The same data are in `S1_classification.csv`.
+This repository accompanies the survey *Unmanned Aerial Systems for Crop and Livestock Farming: A System-Oriented Survey of Sensing, Intelligence, Connectivity, and Autonomy*. It lists every paper in the corpus with its codes in the survey's taxonomy and the per-study checks behind the counts in the paper, so that each count can be checked.
+
+| Table | File | Content |
+|---|---|---|
+| S1 | `S1_classification.csv` | Classification of all 271 papers (Section 3) |
+| S2 | `S2_queries.csv` | Search queries (Section 4) |
+| S3 | `S3_validation_reporting.csv` | Possible leakage and inconsistencies in the 240 primary studies (Section 5) |
+| S4 | `S4_measured_resources.csv` | Resources measured on hardware in 49 primary studies (Section 6) |
+
+Bibliographic references for all keys are in Section 7.
 
 ## 1. How the corpus was built
 
-- **Search.** Google Scholar, July–August 2026, 166 keyword queries in 18 groups, run in two stages (full list in Supplementary Table S2, `S2_queries.md`). The first stage paired "UAV" with a crop or livestock application, a sensing modality, onboard intelligence, communications, planning, or an operational constraint (energy, payload). Because it returned few livestock records, the second stage added livestock-specific queries on detection and counting, behavior, welfare and health, and pasture and grazing, together with livestock variants of the sensing, vision, multi-UAV, and field-validation queries. Existing surveys were also queried and snowballed.
+- **Search.** Google Scholar, July–August 2026, 166 keyword queries in 18 groups, run in two stages (full list in Table S2 below). The first stage paired "UAV" with a crop or livestock application, a sensing modality, onboard intelligence, communications, planning, or an operational constraint (energy, payload). Because it returned few livestock records, the second stage added livestock-specific queries on detection and counting, behavior, welfare and health, and pasture and grazing, together with livestock variants of the sensing, vision, multi-UAV, and field-validation queries. Existing surveys were also queried and snowballed.
 - **Selection.** Peer-reviewed journal and conference papers from 2019 onward, in English, issued by a recognized publisher, in which a UAS is the platform or the explicit design target and the application is crop production, livestock production, or pasture (grazed vegetation). Preprints, theses, and technical reports were excluded. Among eligible records, established venues in agricultural engineering, remote sensing, animal science, robotics, and communications were favored; this judgment was qualitative, and the corpus spans 129 venues.
 - **Coverage check.** A targeted search on autonomous, onboard-perception, and multi-UAV livestock operation added one study.
 - **Result.** 271 papers: 240 primary studies (including 7 dataset and 4 position papers), 28 surveys, and 3 background papers.
@@ -13,7 +22,7 @@ The corpus is a purposive sample. Counts describe the corpus, not the whole fiel
 
 ## 2. How each paper was coded
 
-One author read every paper in full and wrote a standardized review (summary, relevance, strengths, weaknesses, and a cross-check of the paper's claims against its own evidence). A second author classified the papers from these reviews. At least two authors agreed on the final loop-level assignments, and every study at L2–L4 was checked a second time against its review. A paper is classified by what it **implements and evaluates**, not by what it proposes or motivates. Surveys and background papers are not classified and have `NA` in the taxonomy columns.
+One author collected the papers, read every paper in full, and wrote a standardized review (summary, relevance, strengths, weaknesses, and a cross-check of the paper's claims against its own evidence). A second author checked each review back against the original paper, and the papers were classified from the verified reviews. Two authors agreed on the final loop-level assignments, and every study at L2–L4 was checked a second time against its review. A paper is classified by what it **implements and evaluates**, not by what it proposes or motivates. Surveys and background papers are not classified and have `NA` in the taxonomy columns.
 
 ### Loop coverage (L) — primary dimension
 
@@ -45,7 +54,23 @@ Boundary rules:
 
 `AMBIGUOUS` marks a value that could not be determined from the review (one study on L, one on M).
 
-## 3. Summary counts (240 primary studies)
+## 3. Table S1 — Corpus classification
+
+| Column | Meaning |
+|---|---|
+| `bibtex_key`, `title`, `year`, `venue`, `doi` | Bibliographic identity |
+| `literature_type` | primary / dataset / position / survey / generic_uav |
+| `domain_D` | crop, livestock, pasture, wildlife-analogue, cross-domain |
+| `function_F` | F1 crop & soil characterisation · F2 crop object detection & counting · F3 input application & effects · F4 livestock & pasture observation · F5 animal response & guidance · F6 farm data infrastructure · F7 flight & mission enablers |
+| `loop_coverage_L` | L0 enabler · L1p perception product · L1a action without target perception · L2 decision artefact · L3 decoupled loop · L4 in-mission loop |
+| `maturity_M` | M0 concept · M1 simulation · M2 lab/bench · M3 controlled field · M4 farm trial · M5 operational |
+| `measured_resources_R` | which of compute / comms / energy are measured on hardware |
+| `sensing_S` | sensing modalities as reported |
+| `artifacts` | released / on request / none |
+
+Surveys and background papers have `NA` in the taxonomy columns.
+
+### Summary counts (240 primary studies)
 
 | Loop coverage | n |
 |---|---|
@@ -101,9 +126,9 @@ Boundary rules:
 | on request | 11 |
 | released | 27 |
 
-## 4. Classification table
+### Classification table
 
-`#` refers to the bibliography in Section 5. Primary studies come first, then surveys and background papers.
+`#` refers to the bibliography in Section 7. Primary studies come first, then surveys and background papers.
 
 | # | Key | Year | Type | D | F | L | M | R | Artifacts |
 |---|---|---|---|---|---|---|---|---|---|
@@ -379,7 +404,60 @@ Boundary rules:
 | 270 | Poorvi2026Reliable | 2026 | generic_uav | cross-domain | NA | NA | NA | NA | NA |
 | 271 | Zhang2022Optimization | 2022 | generic_uav | cross-domain | NA | NA | NA | NA | NA |
 
-## 5. Bibliography
+## 4. Table S2 — Search queries
+
+Keyword queries run on Google Scholar between July and August 2026: 166 queries in 18 groups. Each query pairs "UAV" (or "drone") with an application, sensing, intelligence, communication, planning, or operational term. Groups 5-7 and the livestock variants in groups 8, 9, 13, 15, 16, and 17 target livestock. Group 18 collects survey queries used for snowballing.
+
+| Group | Name | Queries | n |
+|---|---|---|---|
+| 1 | Crop monitoring and plant phenotyping | `UAV crop monitoring`; `UAV crop phenotyping`; `UAV plant phenotyping`; `UAV crop growth monitoring`; `UAV vegetation monitoring agriculture`; `UAV crop health monitoring`; `UAV canopy monitoring agriculture`; `UAV biomass estimation agriculture`; `UAV yield estimation agriculture`; `UAV crop mapping` | 10 |
+| 2 | Plant disease, pest, and weed detection | `UAV plant disease detection`; `UAV crop disease detection`; `UAV pest detection agriculture`; `UAV insect detection agriculture`; `UAV pest monitoring agriculture`; `UAV weed detection`; `UAV weed mapping`; `UAV invasive species detection agriculture`; `drone pest detection agriculture`; `drone plant disease detection` | 10 |
+| 3 | Water, irrigation, and stress | `UAV irrigation monitoring`; `UAV water stress detection`; `UAV crop water stress`; `UAV drought stress agriculture`; `UAV soil moisture estimation`; `UAV evapotranspiration agriculture`; `UAV irrigation management`; `UAV water management agriculture` | 8 |
+| 4 | Spraying, treatment, and intervention | `UAV spraying agriculture`; `UAV pesticide spraying`; `UAV precision spraying`; `UAV variable rate spraying`; `drone spraying agriculture`; `UAV fertilizer application`; `UAV seeding agriculture`; `UAV precision application agriculture` | 8 |
+| 5 | Livestock detection, counting, and localization | `UAV livestock monitoring`; `UAV cattle monitoring`; `UAV sheep monitoring`; `UAV livestock detection`; `UAV cattle detection`; `UAV animal detection livestock`; `UAV livestock counting`; `UAV cattle counting`; `UAV livestock localization`; `UAV animal tracking agriculture` | 10 |
+| 6 | Livestock behavior, welfare, and health | `UAV livestock behavior monitoring`; `UAV cattle behavior monitoring`; `UAV livestock welfare`; `UAV animal welfare monitoring`; `UAV livestock health monitoring`; `UAV cattle health monitoring`; `UAV thermal imaging livestock`; `UAV heat stress cattle`; `UAV body temperature livestock`; `UAV lameness detection cattle` | 10 |
+| 7 | Pasture and grazing | `UAV pasture monitoring`; `UAV grazing monitoring`; `UAV grazing behavior`; `UAV pasture biomass`; `UAV forage estimation`; `UAV rangeland monitoring livestock`; `UAV grassland monitoring livestock` | 7 |
+| 8 | Sensors | `UAV RGB agriculture`; `UAV multispectral agriculture`; `UAV hyperspectral agriculture`; `UAV thermal agriculture`; `UAV LiDAR agriculture`; `UAV remote sensing agriculture`; `UAV multisensor agriculture`; `UAV sensor fusion agriculture`; `UAV RGB livestock`; `UAV thermal livestock`; `UAV multispectral livestock`; `UAV LiDAR livestock`; `UAV sensor fusion livestock` | 13 |
+| 9 | Computer vision, AI, and deep learning | `UAV computer vision agriculture`; `UAV deep learning agriculture`; `UAV machine learning agriculture`; `UAV object detection agriculture`; `UAV image segmentation agriculture`; `UAV semantic segmentation agriculture`; `UAV instance segmentation agriculture`; `UAV YOLO agriculture`; `UAV CNN agriculture`; `UAV vision transformer agriculture`; `UAV deep learning livestock`; `UAV object detection livestock`; `UAV animal detection deep learning`; `UAV YOLO livestock`; `UAV cattle detection deep learning` | 15 |
+| 10 | Edge and onboard processing | `UAV edge computing agriculture`; `UAV edge AI agriculture`; `UAV onboard processing agriculture`; `UAV onboard AI agriculture`; `UAV embedded vision agriculture`; `UAV real-time detection agriculture`; `UAV real-time image processing agriculture`; `UAV embedded deep learning agriculture` | 8 |
+| 11 | IoT, networking, and communication | `UAV IoT agriculture`; `UAV Internet of Things agriculture`; `UAV wireless sensor network agriculture`; `UAV WSN agriculture`; `UAV LoRa agriculture`; `UAV LoRaWAN agriculture`; `UAV 5G agriculture`; `UAV communication agriculture`; `UAV data collection sensor network agriculture`; `UAV aerial data collection agriculture` | 10 |
+| 12 | Path planning, coverage, and mission planning | `UAV path planning agriculture`; `UAV mission planning agriculture`; `UAV coverage path planning agriculture`; `UAV trajectory planning agriculture`; `UAV route planning agriculture`; `UAV optimal path agriculture`; `UAV autonomous navigation agriculture`; `UAV field coverage agriculture` | 8 |
+| 13 | Multi-UAV and swarm | `multi UAV agriculture`; `multiple UAV agriculture`; `UAV swarm agriculture`; `multi drone agriculture`; `cooperative UAV agriculture`; `UAV fleet agriculture`; `multi UAV precision agriculture`; `multi UAV livestock monitoring` | 8 |
+| 14 | Energy, endurance, and charging | `UAV energy consumption agriculture`; `UAV energy efficiency agriculture`; `UAV battery agriculture`; `UAV endurance agriculture`; `UAV flight time agriculture`; `UAV charging agriculture`; `UAV recharging agriculture`; `UAV energy aware path planning agriculture` | 8 |
+| 15 | Robotics and heterogeneous systems | `UAV UGV agriculture`; `UAV ground robot agriculture`; `aerial ground robot agriculture`; `heterogeneous robots agriculture`; `UAV UGV precision agriculture`; `UAV UGV livestock`; `multi robot agriculture` | 7 |
+| 16 | Data, datasets, and benchmarks | `UAV dataset agriculture`; `drone dataset agriculture`; `UAV image dataset crop`; `UAV dataset plant disease`; `UAV weed dataset`; `UAV pest dataset`; `UAV livestock dataset`; `UAV cattle dataset`; `drone animal detection dataset` | 9 |
+| 17 | Field validation and practical deployment | `UAV field experiment agriculture`; `UAV field validation agriculture`; `UAV real world agriculture`; `UAV field deployment agriculture`; `UAV experimental evaluation agriculture`; `UAV farm deployment`; `UAV commercial farm agriculture`; `UAV livestock field experiment`; `UAV real farm livestock` | 9 |
+| 18 | Surveys and reviews (used for snowballing) | `"UAV precision agriculture" survey`; `"UAV precision agriculture" review`; `"drone agriculture" systematic review`; `"UAV smart farming" review`; `"UAV livestock" review`; `"drone livestock monitoring" review`; `"UAV remote sensing agriculture" review`; `"UAV artificial intelligence agriculture" review` | 8 |
+
+## 5. Table S3 — Validation and reporting checks
+
+`S3_validation_reporting.csv` has one row per primary study (240 rows). Each flagged case was checked by hand against the study's review.
+
+| Column | Meaning |
+|---|---|
+| `bibtex_key` | Study |
+| `leakage` | `documented`: the paper describes a split that mixes related samples (patches or tiles of the same image, frames of the same video, repeated measurements of the same plot), augmentation before splitting, or test data used for model selection · `grouping unreported`: related samples exist but the paper does not say how they were grouped · empty: no flag. A single-site or single-season test alone is not counted. |
+| `leakage_reason` | One-line reason |
+| `inconsistency` | `significant`: a headline result or the description of the evaluation differs between abstract, text, and tables · `minor`: small differences (rounding, labels, notation, sample accounting) that do not change the headline result; not counted in the paper · empty: none found |
+| `inconsistency_reason` | One-line reason for significant cases |
+
+Counts: leakage 19 documented and 37 with grouping unreported (56 studies); inconsistencies 44 significant (counted in the paper) and 57 minor (not counted).
+
+## 6. Table S4 — Measured system resources
+
+`S4_measured_resources.csv` lists the 49 primary studies that measure at least one resource on hardware (non-`none` values of `measured_resources_R` in S1). Values were taken from the reviews.
+
+| Column | Meaning |
+|---|---|
+| `bibtex_key` | Study |
+| `resource` | compute / comms / energy, or combinations, as in S1 |
+| `hardware_or_link` | Computer, radio link, or platform measured |
+| `metric`, `value` | What was measured and the reported value (`reported` when the review notes a measurement without a single headline value) |
+| `setting` | Where the measurement was taken: in flight, field, bench, embedded board, desktop GPU/CPU, offline (hardware not specified), or simulation |
+
+Counts: computation 31, communication 11, energy 15 studies; none measures all three.
+
+## 7. Bibliography
 
 1. Afsar, Muhammad Munir; Iqbal, Muhammad Shahid; Bakhshi, Asim Dilawar; Hussain, Ejaz; Iqbal, Javed. MangiSpectra: A Multivariate Phenological Analysis Framework Leveraging UAV Imagery and LSTM for Tree Health and Yield Estimation in Mango Orchards. *Remote Sensing*, 2025. https://doi.org/10.3390/rs17040703
 2. Ahmad, Wasim; Ali, Farman; Ullah, Yasir; Asghar Khan, Muhammad; Khan, Mansoor; Khan, Salabat; Attique Khan, Muhammad; Ali, Aitizaz; Almansour, Shahad. IoUT and Collaborative Cloud Computing-Based UAV Channel Modeling for Agriculture Communication. *IEEE Transactions on Consumer Electronics*, 2025. https://doi.org/10.1109/tce.2025.3593867
