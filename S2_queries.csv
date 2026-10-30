@@ -1,0 +1,167 @@
+group_id,group,query
+1,Crop monitoring and plant phenotyping,UAV crop monitoring
+1,Crop monitoring and plant phenotyping,UAV crop phenotyping
+1,Crop monitoring and plant phenotyping,UAV plant phenotyping
+1,Crop monitoring and plant phenotyping,UAV crop growth monitoring
+1,Crop monitoring and plant phenotyping,UAV vegetation monitoring agriculture
+1,Crop monitoring and plant phenotyping,UAV crop health monitoring
+1,Crop monitoring and plant phenotyping,UAV canopy monitoring agriculture
+1,Crop monitoring and plant phenotyping,UAV biomass estimation agriculture
+1,Crop monitoring and plant phenotyping,UAV yield estimation agriculture
+1,Crop monitoring and plant phenotyping,UAV crop mapping
+2,"Plant disease, pest, and weed detection",UAV plant disease detection
+2,"Plant disease, pest, and weed detection",UAV crop disease detection
+2,"Plant disease, pest, and weed detection",UAV pest detection agriculture
+2,"Plant disease, pest, and weed detection",UAV insect detection agriculture
+2,"Plant disease, pest, and weed detection",UAV pest monitoring agriculture
+2,"Plant disease, pest, and weed detection",UAV weed detection
+2,"Plant disease, pest, and weed detection",UAV weed mapping
+2,"Plant disease, pest, and weed detection",UAV invasive species detection agriculture
+2,"Plant disease, pest, and weed detection",drone pest detection agriculture
+2,"Plant disease, pest, and weed detection",drone plant disease detection
+3,"Water, irrigation, and stress",UAV irrigation monitoring
+3,"Water, irrigation, and stress",UAV water stress detection
+3,"Water, irrigation, and stress",UAV crop water stress
+3,"Water, irrigation, and stress",UAV drought stress agriculture
+3,"Water, irrigation, and stress",UAV soil moisture estimation
+3,"Water, irrigation, and stress",UAV evapotranspiration agriculture
+3,"Water, irrigation, and stress",UAV irrigation management
+3,"Water, irrigation, and stress",UAV water management agriculture
+4,"Spraying, treatment, and intervention",UAV spraying agriculture
+4,"Spraying, treatment, and intervention",UAV pesticide spraying
+4,"Spraying, treatment, and intervention",UAV precision spraying
+4,"Spraying, treatment, and intervention",UAV variable rate spraying
+4,"Spraying, treatment, and intervention",drone spraying agriculture
+4,"Spraying, treatment, and intervention",UAV fertilizer application
+4,"Spraying, treatment, and intervention",UAV seeding agriculture
+4,"Spraying, treatment, and intervention",UAV precision application agriculture
+5,"Livestock detection, counting, and localization",UAV livestock monitoring
+5,"Livestock detection, counting, and localization",UAV cattle monitoring
+5,"Livestock detection, counting, and localization",UAV sheep monitoring
+5,"Livestock detection, counting, and localization",UAV livestock detection
+5,"Livestock detection, counting, and localization",UAV cattle detection
+5,"Livestock detection, counting, and localization",UAV animal detection livestock
+5,"Livestock detection, counting, and localization",UAV livestock counting
+5,"Livestock detection, counting, and localization",UAV cattle counting
+5,"Livestock detection, counting, and localization",UAV livestock localization
+5,"Livestock detection, counting, and localization",UAV animal tracking agriculture
+6,"Livestock behavior, welfare, and health",UAV livestock behavior monitoring
+6,"Livestock behavior, welfare, and health",UAV cattle behavior monitoring
+6,"Livestock behavior, welfare, and health",UAV livestock welfare
+6,"Livestock behavior, welfare, and health",UAV animal welfare monitoring
+6,"Livestock behavior, welfare, and health",UAV livestock health monitoring
+6,"Livestock behavior, welfare, and health",UAV cattle health monitoring
+6,"Livestock behavior, welfare, and health",UAV thermal imaging livestock
+6,"Livestock behavior, welfare, and health",UAV heat stress cattle
+6,"Livestock behavior, welfare, and health",UAV body temperature livestock
+6,"Livestock behavior, welfare, and health",UAV lameness detection cattle
+7,Pasture and grazing,UAV pasture monitoring
+7,Pasture and grazing,UAV grazing monitoring
+7,Pasture and grazing,UAV grazing behavior
+7,Pasture and grazing,UAV pasture biomass
+7,Pasture and grazing,UAV forage estimation
+7,Pasture and grazing,UAV rangeland monitoring livestock
+7,Pasture and grazing,UAV grassland monitoring livestock
+8,Sensors,UAV RGB agriculture
+8,Sensors,UAV multispectral agriculture
+8,Sensors,UAV hyperspectral agriculture
+8,Sensors,UAV thermal agriculture
+8,Sensors,UAV LiDAR agriculture
+8,Sensors,UAV remote sensing agriculture
+8,Sensors,UAV multisensor agriculture
+8,Sensors,UAV sensor fusion agriculture
+8,Sensors,UAV RGB livestock
+8,Sensors,UAV thermal livestock
+8,Sensors,UAV multispectral livestock
+8,Sensors,UAV LiDAR livestock
+8,Sensors,UAV sensor fusion livestock
+9,"Computer vision, AI, and deep learning",UAV computer vision agriculture
+9,"Computer vision, AI, and deep learning",UAV deep learning agriculture
+9,"Computer vision, AI, and deep learning",UAV machine learning agriculture
+9,"Computer vision, AI, and deep learning",UAV object detection agriculture
+9,"Computer vision, AI, and deep learning",UAV image segmentation agriculture
+9,"Computer vision, AI, and deep learning",UAV semantic segmentation agriculture
+9,"Computer vision, AI, and deep learning",UAV instance segmentation agriculture
+9,"Computer vision, AI, and deep learning",UAV YOLO agriculture
+9,"Computer vision, AI, and deep learning",UAV CNN agriculture
+9,"Computer vision, AI, and deep learning",UAV vision transformer agriculture
+9,"Computer vision, AI, and deep learning",UAV deep learning livestock
+9,"Computer vision, AI, and deep learning",UAV object detection livestock
+9,"Computer vision, AI, and deep learning",UAV animal detection deep learning
+9,"Computer vision, AI, and deep learning",UAV YOLO livestock
+9,"Computer vision, AI, and deep learning",UAV cattle detection deep learning
+10,Edge and onboard processing,UAV edge computing agriculture
+10,Edge and onboard processing,UAV edge AI agriculture
+10,Edge and onboard processing,UAV onboard processing agriculture
+10,Edge and onboard processing,UAV onboard AI agriculture
+10,Edge and onboard processing,UAV embedded vision agriculture
+10,Edge and onboard processing,UAV real-time detection agriculture
+10,Edge and onboard processing,UAV real-time image processing agriculture
+10,Edge and onboard processing,UAV embedded deep learning agriculture
+11,"IoT, networking, and communication",UAV IoT agriculture
+11,"IoT, networking, and communication",UAV Internet of Things agriculture
+11,"IoT, networking, and communication",UAV wireless sensor network agriculture
+11,"IoT, networking, and communication",UAV WSN agriculture
+11,"IoT, networking, and communication",UAV LoRa agriculture
+11,"IoT, networking, and communication",UAV LoRaWAN agriculture
+11,"IoT, networking, and communication",UAV 5G agriculture
+11,"IoT, networking, and communication",UAV communication agriculture
+11,"IoT, networking, and communication",UAV data collection sensor network agriculture
+11,"IoT, networking, and communication",UAV aerial data collection agriculture
+12,"Path planning, coverage, and mission planning",UAV path planning agriculture
+12,"Path planning, coverage, and mission planning",UAV mission planning agriculture
+12,"Path planning, coverage, and mission planning",UAV coverage path planning agriculture
+12,"Path planning, coverage, and mission planning",UAV trajectory planning agriculture
+12,"Path planning, coverage, and mission planning",UAV route planning agriculture
+12,"Path planning, coverage, and mission planning",UAV optimal path agriculture
+12,"Path planning, coverage, and mission planning",UAV autonomous navigation agriculture
+12,"Path planning, coverage, and mission planning",UAV field coverage agriculture
+13,Multi-UAV and swarm,multi UAV agriculture
+13,Multi-UAV and swarm,multiple UAV agriculture
+13,Multi-UAV and swarm,UAV swarm agriculture
+13,Multi-UAV and swarm,multi drone agriculture
+13,Multi-UAV and swarm,cooperative UAV agriculture
+13,Multi-UAV and swarm,UAV fleet agriculture
+13,Multi-UAV and swarm,multi UAV precision agriculture
+13,Multi-UAV and swarm,multi UAV livestock monitoring
+14,"Energy, endurance, and charging",UAV energy consumption agriculture
+14,"Energy, endurance, and charging",UAV energy efficiency agriculture
+14,"Energy, endurance, and charging",UAV battery agriculture
+14,"Energy, endurance, and charging",UAV endurance agriculture
+14,"Energy, endurance, and charging",UAV flight time agriculture
+14,"Energy, endurance, and charging",UAV charging agriculture
+14,"Energy, endurance, and charging",UAV recharging agriculture
+14,"Energy, endurance, and charging",UAV energy aware path planning agriculture
+15,Robotics and heterogeneous systems,UAV UGV agriculture
+15,Robotics and heterogeneous systems,UAV ground robot agriculture
+15,Robotics and heterogeneous systems,aerial ground robot agriculture
+15,Robotics and heterogeneous systems,heterogeneous robots agriculture
+15,Robotics and heterogeneous systems,UAV UGV precision agriculture
+15,Robotics and heterogeneous systems,UAV UGV livestock
+15,Robotics and heterogeneous systems,multi robot agriculture
+16,"Data, datasets, and benchmarks",UAV dataset agriculture
+16,"Data, datasets, and benchmarks",drone dataset agriculture
+16,"Data, datasets, and benchmarks",UAV image dataset crop
+16,"Data, datasets, and benchmarks",UAV dataset plant disease
+16,"Data, datasets, and benchmarks",UAV weed dataset
+16,"Data, datasets, and benchmarks",UAV pest dataset
+16,"Data, datasets, and benchmarks",UAV livestock dataset
+16,"Data, datasets, and benchmarks",UAV cattle dataset
+16,"Data, datasets, and benchmarks",drone animal detection dataset
+17,Field validation and practical deployment,UAV field experiment agriculture
+17,Field validation and practical deployment,UAV field validation agriculture
+17,Field validation and practical deployment,UAV real world agriculture
+17,Field validation and practical deployment,UAV field deployment agriculture
+17,Field validation and practical deployment,UAV experimental evaluation agriculture
+17,Field validation and practical deployment,UAV farm deployment
+17,Field validation and practical deployment,UAV commercial farm agriculture
+17,Field validation and practical deployment,UAV livestock field experiment
+17,Field validation and practical deployment,UAV real farm livestock
+18,Surveys and reviews (used for snowballing),"""UAV precision agriculture"" survey"
+18,Surveys and reviews (used for snowballing),"""UAV precision agriculture"" review"
+18,Surveys and reviews (used for snowballing),"""drone agriculture"" systematic review"
+18,Surveys and reviews (used for snowballing),"""UAV smart farming"" review"
+18,Surveys and reviews (used for snowballing),"""UAV livestock"" review"
+18,Surveys and reviews (used for snowballing),"""drone livestock monitoring"" review"
+18,Surveys and reviews (used for snowballing),"""UAV remote sensing agriculture"" review"
+18,Surveys and reviews (used for snowballing),"""UAV artificial intelligence agriculture"" review"

@@ -1,0 +1,50 @@
+bibtex_key,resource,hardware_or_link,metric,value,setting
+Machidon2025Cost,compute+energy,Jetson Nano on the UAV,frame rate; energy per image,about 30.6 FPS (Squeeze U-Net); energy per image reported,embedded board
+Menshchikov2021Real,compute+energy,Jetson Nano,frame rate; power,0.46 FPS at 5.5 W,embedded board
+Koshelev2023Drone,compute+energy,Jetson Xavier NX,inference speed; power,measured on a replayed frame stream,embedded board
+Rai2024Agricultural,compute+energy,Jetson AGX Xavier,video processing time,126.6 s for a 25 s clip (training energy only),embedded board
+Islam2025Towards,compute,Jetson Nano / Orin Nano,frame rate,10 to 44 FPS,embedded board
+Huang2026Yolo,compute,Jetson Nano (FP16/INT8),inference speed,reported,embedded board
+Zhang2026Real,compute+comms,Jetson Orin Nano fed by remote-controller video,frame rate; latency,18 FPS (PyTorch) to 40 FPS (TensorRT); 25 to 50 ms per frame estimated,embedded board on the ground
+CatalaRoman2024Autonomous,compute,smartphone,frame rate,11.6 FPS,embedded board on the ground
+Khan2021Real,compute,Raspberry Pi 4 + Neural Compute Stick 2,time per image,3.68 ms per image (classifier only),in flight
+Singh2024Smart,compute,Raspberry Pi 4B + Coral,inference time,91 ms,in flight (potted plants)
+Kumar2024Design,compute,Jetson Xavier NX,onboard perception and control,runs in flight; timing reported,in flight (constructed trellis)
+Wang2023Variable,compute,onboard spray controller,position lag,3.87 m to 0.32 m with lag compensation,in flight
+Wang2024Development,compute+comms,onboard spray controller; LoRa relay,valve response delay,about 50 ms,bench and field
+Zhang2023Precision,compute,onboard spray controller,nozzle response delay,reported,bench
+Liu2025Lidar,compute,onboard prescription lookup,flow feedback,reported,field
+Liu2025Multi,compute,Raspberry Pi 4B,optimizer execution,runs on board,simulation
+Ijaz2024Robust,compute,Pixhawk Orange Cube,controller execution,hardware in the loop,simulation
+Hijikata2026Hierarchical,compute,not specified,scheduling time,3.61 s per 120 s period (5 drones; exceeds period at 13),simulation
+Lin2022Quick,compute,RTX 3090,frame rate,77 FPS,desktop GPU
+Kodors2024Autonomous,compute,RTX 4070 Ti,inference time,reported,desktop GPU
+Peng2025Research,compute,desktop GPU,frame rate,45.87 FPS (65.79 for baseline),desktop GPU
+Shen2024High,compute,RTX 3090,processing time,about 30 min per 2000 tiles,desktop GPU
+Shen2024Improved,compute,Tesla T4,frame rate,77 FPS,desktop GPU
+Zhang2026Automated,compute,GTX 1650 Ti laptop,frame rate,21.1 to 36.9 FPS,desktop GPU
+Xiao2025Novel,compute,Intel i5 laptop (no GPU),frame rate,about 2.0 to 3.4 FPS,desktop CPU
+Cui2024Exploring,compute,GPU,frame rate,reported,desktop GPU
+Lishchynskyi2024Trajectory,compute,not specified,time per frame,up to 55 ms,offline
+Chen2025Dasnet,compute,not specified,inference time,reported,offline
+Guo2024Intelligent,compute,not specified,latency,reported,offline
+Bakas2025Citrus,compute,not specified,inference time,12.55 ms,offline
+Bouchekara2022Sift,compute,not specified,processing time,123 s vs 37 s for SIFT,offline
+Holtorf2023Wireless,comms+energy,LoRa with UAV relay; ESP32 node,range; node current,316 m to 1000 m with UAV; 550 m to a node buried 30 cm; about 1 mA sleep,field
+R2025Precision,comms+energy,433 MHz LoRa; sensor node,range; transmit power,1.8 km stable and 2.3 km max at full power; 500 to 600 m at reduced power; 0.785 W,field
+Wang2023Electronic,comms,UAV video link; NB-IoT,range,stable video at 6 km; 8 km test ended in forced landing,field
+Nazzari2025Modular,comms,Wi-Fi mesh,packet delivery,relay UAV improves delivery when obstructed,field
+Lee2022Development,comms,MAVLink telemetry,latency,334 ms average,field (two UAVs)
+Ortega2022Proposal,comms,analog video; IPFS,range; transfer,about 150 m flight distance; small IPFS transfers,field
+Almstedt2025Comprehensive,comms,LoRa,image transmission,small images feasible (separate test),field
+Vaghalandari2025Performance,comms,LoRa,range,measured on the ground; mission coverage simulated,ground and simulation
+Hwerbi2023Veterinary,comms,local blockchain network,transaction latency,rises with transaction load,simulation
+Panjaitan2022Drone,energy,spraying UAV,flight time,about 34 min empty vs 15 min with full 16 L load,field
+Xu2023Design,energy,spraying UAV,hover time,over 10 min at full load,field
+Li2022Rapid,energy,spraying UAV,endurance model error,up to about 2.7% in hover tests,field (hover)
+Kim2020Battery,energy,UAV battery system,flight time,550 s to 580 s,bench and short hover
+Boubin2022Adaptive,energy,UAV fleet,battery drain vs weather,measured in field; 45% saving only in simulation,field and simulation
+Jawad2019Wireless,energy,wireless charging pad,transfer efficiency,85.25% at 0 cm; 64.16% at 1 cm; 17.5% at 4 cm,bench
+Chittoor2023Assessment,energy,wireless charging pad,power; efficiency,72 W at 91.3%,bench
+Lin2025Optimization,energy,battery thermal management,peak temperature; capacity retention,58 to 49 C; 92.3% vs 85.1% after 100 cycles,bench
+Safaeinejad2025Reducing,energy,UAV vs tractor spraying,field energy input,146.84 vs 365.26 MJ/ha,field inventory
